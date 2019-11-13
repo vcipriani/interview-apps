@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test App</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="clientScript.js"></script>
+</head>
+<body>
+    <h1>Part 1</h1>
+    <button onclick="alertButtonHandler()">Click Me</button>
+
+    <h1>Part 2</h1>
+    <h3>The form below creates a task.  Go ahead and create some</h3>
+    <form>
+        <input type="text" name="name" placeholder="Name" />
+        <input type="text" name="description" placeholder="Description"/>
+        <button type="button" onclick="submitForm();">Submit</button>
+    </form>
+
+    <h1>Part 3</h1>
+    <h3>Below we should be rendering all of the cool tasks you created.</h3>
+    <ul id="task-list">
+
+    </ul>
+</body>
+</html>

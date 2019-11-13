@@ -1,0 +1,17 @@
+{
+  "name": "attempt1",
+  "version": "1.0.0",
+  "description": "Interview Dummy App #1",
+  "main": "server.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
