@@ -23,19 +23,15 @@ app.get('/api/getMessage', function (req, res) {
     res.send(JSON.stringify(data));
 });
   
-const tasks = [];
+const database = [];
 
 app.post('/api/createTask', function(req, res) {
-    const obj = req.body.reduce((memo, current) => {
-        memo[current.name] = current.value
-        return memo;
-    }, {})
-    tasks.push(obj);
+    database.push(req.body);
     res.send({status: 'success'});
 });
 
 app.get('/api/tasks', function (req, res) {
-    res.send(JSON.stringify(tasks));
+    res.send(JSON.stringify(database));
 })
 
 

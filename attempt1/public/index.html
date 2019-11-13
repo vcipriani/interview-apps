@@ -13,16 +13,16 @@
 </head>
 <body>
     <h1>Part 1</h1>
-    <button onclick="alertButtonHandler()">Click Me</button>
+    <button onclick="alertButtonHandlr()">Click Me</button>
 
     <h1>Part 2</h1>
     <h3>The form below creates a task.  Go ahead and create some</h3>
-    <form>
+    <form hidden>
         <input type="text" name="name" placeholder="Name" />
         <input type="text" name="description" placeholder="Description"/>
         <button type="button" onclick="submitForm();">Submit</button>
     </form>
-
+    
     <h1>Part 3</h1>
     <h3>Below we should be rendering all of the cool tasks you created.</h3>
     <ul id="task-list">
