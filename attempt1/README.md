@@ -2,7 +2,8 @@
 
 To start the server run the following from the CLI.
 
-```js
+```bash
+yarn
 yarn run start
 ```
 
